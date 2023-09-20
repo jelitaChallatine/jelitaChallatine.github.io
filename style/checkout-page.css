@@ -1,0 +1,200 @@
+.bg-utama {
+    background-color: rgba(248, 252, 250, 1);
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #FF7468 !important; /* Warna teks saat dihover */
+}
+  .nav-item {
+    color: #14183E;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 200% */
+    letter-spacing: 2.1px;
+    text-transform: capitalize;
+    margin-right: 15px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #333; /* Warna teks default */
+    transition: color 0.3s; /* Transisi warna teks */
+  }
+
+  .nav-link:hover {
+    color: #5AACA8; /* Warna teks saat dihover */
+  }
+/* image logo navBar */
+    .navbar-brand LogoNav {
+      margin-left: 10px; /* Atur margin kiri sejauh 10px (atau sesuai dengan kebutuhan Anda) */
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='coral' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+  /* button */
+  .register {
+    color: var(--greenColor, #5AACA8);
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 200% */
+    letter-spacing: 2.1px;
+  }
+  .form-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
+  }
+  
+  .form-btn-container a {
+    margin-right: 10px; /* Sesuaikan jarak horizontal antara komponen sesuai kebutuhan Anda */
+    margin-bottom: 20px
+  }
+  /* menu nav */
+    /* button regist */
+    .btn-outline-info {
+      color: var(--greenColor, #5AACA8);
+      font-family: Raleway;
+      font-size: 10px; /* Ubah ukuran teks sesuai kebutuhan Anda */
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* Sesuaikan sesuai dengan ukuran teks */
+      letter-spacing: 1.8px; /* Sesuaikan sesuai dengan kebutuhan Anda */
+      border-radius: 8px;
+      border: 1px solid var(--greenColor, #5AACA8);
+    }
+    /* CSS untuk membuat tombol tanpa batas */
+  .btn-no-border {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Styling tambahan untuk warna teks dan hover */
+  .btn-no-border {
+    color: #000; /* Warna teks tombol */
+    text-decoration: none !important; /* Hapus dekorasi tautan */
+    transition: color 0.3s; /* Transisi warna teks saat dihover */
+  }
+  
+  .btn-no-border:hover {
+    color: #5AACA8 ; /* Warna teks saat dihover */
+  }
+  .container-xxl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title {
+    color: #14183E;
+    font-family: Lora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: capitalize;
+   
+}
+
+/* progres */
+.prog-bg {
+  border-radius: 5px;
+  border: 1px solid rgba(90, 172, 168, 0.50);
+  background: #FFF;
+}
+.progres {
+  background-color: rgba(90, 172, 168, 1);
+  width: 49%;
+  height: 5px;
+  justify-content: space-between;
+ 
+}
+.rinc{
+  color: #FF7468;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.638p16
+                                       
+}
+
+.posision-persen {
+  position: relative;
+  left: 98%;
+  transform: translateY(-70%);
+
+}
+
+/* button donasi sekarang */
+#donate-button {
+    display: inline-flex;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #FF7468;
+    transition: background-color 0.3s ease; /* Adding a smooth transition for the background color */
+}
+
+#donate-button:hover {
+    background-color: rgba(255, 159, 150, 0.915); /* Change the background color on hover */
+}
+.text-bottom{
+  color: #14183E;
+text-align: center;
+font-family: Raleway;
+font-size: 23.258px;
+font-style: normal;
+font-weight: 600;
+line-height: 30.602px; /* 131.579% */
+letter-spacing: 0.698px;
+}
+
+
+/* inputan */
+#custom-input  {
+    border-radius: 4px;
+    border: 2px solid rgba(158, 158, 158, 0.35);
+    background: #F8FCFA;
+    height: 56px;
+    
+}
+
+/* image */
+.image-content{
+    width: 466px;
+height: 316px;
+flex-shrink: 0;
+}
+.text{
+    /* paragraph */
+font-family: Raleway;
+font-size: 17px;
+font-style: normal;
+line-height: 27px; /* 158.824% */
+letter-spacing: 0.51px;
+}
+.selengkapnya {
+color: var(--greenColor, #5AACA8);
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+
+
+}
