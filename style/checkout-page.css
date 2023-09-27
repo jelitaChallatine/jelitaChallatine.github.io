@@ -2,53 +2,45 @@
     background-color: rgba(248, 252, 250, 1);
 }
 .navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #FF7468 !important; /* Warna teks saat dihover */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
-  .nav-item {
-    color: #14183E;
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 200% */
-    letter-spacing: 2.1px;
-    text-transform: capitalize;
-    margin-right: 15px;
-  }
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FF7468 !important; /* Warna teks saat dihover */
+}
+.nav-item {
+  color: #14183E;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 200% */
+  letter-spacing: 2.1px;
+  text-transform: capitalize;
+  margin-right: 15px;
+}
 
-  .nav-link {
-    text-decoration: none;
-    color: #333; /* Warna teks default */
-    transition: color 0.3s; /* Transisi warna teks */
-  }
+.nav-link {
+  text-decoration: none;
+  color: #333; /* Warna teks default */
+  transition: color 0.3s; /* Transisi warna teks */
+}
 
-  .nav-link:hover {
-    color: #5AACA8; /* Warna teks saat dihover */
-  }
+.nav-link:hover {
+  color: #5AACA8; /* Warna teks saat dihover */
+}
 /* image logo navBar */
-    .navbar-brand LogoNav {
-      margin-left: 10px; /* Atur margin kiri sejauh 10px (atau sesuai dengan kebutuhan Anda) */
-    }
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='coral' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
+  .navbar-brand LogoNav {
+    margin-left: 10px; /* Atur margin kiri sejauh 10px (atau sesuai dengan kebutuhan Anda) */
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='coral' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 
   /* button */
-  .register {
-    color: var(--greenColor, #5AACA8);
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 200% */
-    letter-spacing: 2.1px;
-  }
+
   .form-btn-container {
     display: flex;
     justify-content: center;
@@ -63,7 +55,6 @@
   /* menu nav */
     /* button regist */
     .btn-outline-info {
-      color: var(--greenColor, #5AACA8);
       font-family: Raleway;
       font-size: 10px; /* Ubah ukuran teks sesuai kebutuhan Anda */
       font-style: normal;
@@ -72,6 +63,11 @@
       letter-spacing: 1.8px; /* Sesuaikan sesuai dengan kebutuhan Anda */
       border-radius: 8px;
       border: 1px solid var(--greenColor, #5AACA8);
+    }
+    .btn.btn-outline-info:hover {
+      border-color: #FF7468;
+      color: #FF7468;
+      background-color: transparent; /* Mengubah none menjadi transparent */
     }
     /* CSS untuk membuat tombol tanpa batas */
   .btn-no-border {
@@ -89,7 +85,7 @@
   }
   
   .btn-no-border:hover {
-    color: #5AACA8 ; /* Warna teks saat dihover */
+    color: #FF7468
   }
   .container-xxl {
     display: flex;
@@ -141,19 +137,20 @@
 
 /* button donasi sekarang */
 #donate-button {
-    display: inline-flex;
-    letter-spacing: 2px;
-    padding: 15px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #FF7468;
-    transition: background-color 0.3s ease; /* Adding a smooth transition for the background color */
+  display: inline-flex;
+  letter-spacing: 2px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fb6c5f;
+  transition: background-color 0.3s ease; /* Adding a smooth transition for the background color */
 }
-
 #donate-button:hover {
-    background-color: rgba(255, 159, 150, 0.915); /* Change the background color on hover */
+  color: #14183E;
+  background: rgba(90, 172, 168, 0.50);
+
 }
 .text-bottom{
   color: #14183E;
@@ -168,14 +165,22 @@ letter-spacing: 0.698px;
 
 
 /* inputan */
-#custom-input  {
-    border-radius: 4px;
-    border: 2px solid rgba(158, 158, 158, 0.35);
-    background: #F8FCFA;
-    height: 56px;
-    
+#custom-input::placeholder{
+  color: rgba(112, 112, 112, 0.50);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175.7%; /* 28.112px */
 }
-
+#select-custom{
+  color: rgba(112, 112, 112, 0.50);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175.7%; /* 28.112px */
+}
 /* image */
 .image-content{
     width: 466px;
@@ -191,10 +196,67 @@ line-height: 27px; /* 158.824% */
 letter-spacing: 0.51px;
 }
 .selengkapnya {
-color: var(--greenColor, #5AACA8);
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
+  text-decoration: none;
+  color: var(--greenColor, #5AACA8);
+  /* Section */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 1.28px;
 
 
 }
+/* footer */
+.lay5 {
+    background-color: #f7f7f7; /* Warna latar belakang */
+  }
+
+  .title_List{
+    font-family: "Raleway", sans-serif;
+     font-size: 16px;
+    color:  rgb(0, 0, 0) ;
+  }
+
+  .parag_lay5{
+    color: #707070;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+.List_1 {
+  color: #707070;
+  font-family: Raleway;
+  list-style-type: none !important;  /* Hapus simbol daftar */
+}
+
+.List_1 .list-footer {
+  margin-bottom: 10px; /* Sesuaikan nilai ini sesuai dengan jarak yang Anda inginkan */
+}
+    .copy_posision {
+      display: none; /* Sembunyikan elemen pada layar kecil */
+  }
+    .title_List {
+      font-family: "Raleway", sans-serif;
+      font-size: 19px;
+      color: rgb(0, 0, 0);
+      margin-bottom: 10px; /* Sesuaikan nilai ini sesuai dengan jarak yang Anda inginkan */
+      padding: 0;
+    }
+ 
+
+  .img_lay5{
+    height: 34px;
+  }
+  .Copyright{
+    font-size: 12px;
+    color: rgba(112, 112, 112, 1);
+  }   
+  
+  * {
+    font-family: "Raleway", sans-serif;
+  }

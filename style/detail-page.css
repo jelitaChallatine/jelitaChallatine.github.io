@@ -40,15 +40,6 @@
     }
 
   /* button */
-  .register {
-    color: var(--greenColor, #5AACA8);
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 200% */
-    letter-spacing: 2.1px;
-  }
   .form-btn-container {
     display: flex;
     justify-content: center;
@@ -63,7 +54,6 @@
   /* menu nav */
     /* button regist */
     .btn-outline-info {
-      color: var(--greenColor, #5AACA8);
       font-family: Raleway;
       font-size: 10px; /* Ubah ukuran teks sesuai kebutuhan Anda */
       font-style: normal;
@@ -72,6 +62,11 @@
       letter-spacing: 1.8px; /* Sesuaikan sesuai dengan kebutuhan Anda */
       border-radius: 8px;
       border: 1px solid var(--greenColor, #5AACA8);
+    }
+    .btn.btn-outline-info:hover {
+      border-color: #FF7468;
+      color: #FF7468;
+      background-color: transparent; /* Mengubah none menjadi transparent */
     }
     /* CSS untuk membuat tombol tanpa batas */
   .btn-no-border {
@@ -89,7 +84,7 @@
   }
   
   .btn-no-border:hover {
-    color: #5AACA8 ; /* Warna teks saat dihover */
+    color: #FF7468 ; /* Warna teks saat dihover */
   }
   .container-xxl {
     display: flex;
@@ -187,19 +182,20 @@ line-height: 27px; /* 158.82*/
 
 /* button donasi sekarang */
 #donate-button {
-    display: inline-flex;
-    letter-spacing: 2px;
-    padding: 15px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #FF7468;
-    transition: background-color 0.3s ease; /* Adding a smooth transition for the background color */
+  display: inline-flex;
+  letter-spacing: 2px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fb6c5f;
+  transition: background-color 0.3s ease; /* Adding a smooth transition for the background color */
 }
-
 #donate-button:hover {
-    background-color: rgba(255, 159, 150, 0.915); /* Change the background color on hover */
+  color: white !important;
+  background:rgba(90, 172, 168, 0.50);
+
 }
 .text-bottom{
   color: #14183E;
@@ -278,8 +274,8 @@ color: #707070;
 font-family: Raleway;
 list-style-type: none !important;  /* Hapus simbol daftar */
 }
-ul li a{
-color: #707070;
+.text-decoration-none{
+  color: #707070;
 font-family: Raleway;
 font-size: 12px;
 font-style: normal;
